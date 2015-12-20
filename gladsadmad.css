@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+h1 {
+  font-weight:600;
+}
+
+.parallax-container {
+  height: 300px;
+}
+
