@@ -3,7 +3,10 @@ h1 {
   font-weight:600;
 }
 
-.parallax-container {
+#welcome-parallax-container {
   height: 300px;
 }
 
+#body-parallax-container {
+  height: 150px;
+}
