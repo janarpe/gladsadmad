@@ -6,23 +6,16 @@ if (Meteor.isClient) {
   //passwordSignupFields: "USERNAME_ONLY"
   });
 
-  Template.home.rendered = function() {
+  Template.home.onRendered(function() {
     $('.parallax').parallax();
     $(".button-collapse").sideNav(); // TODO: when layout is used initialize on every page
-  }
+  })
 
-  Template.home.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.home.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
+  Template.dashboard.onRendered(function () {
+    console.log("hi");
+    $('.parallax').parallax();
+    $(".button-collapse").sideNav(); // TODO: when layout is used initialize on every page
+  })
 }
 
 if (Meteor.isServer) {
