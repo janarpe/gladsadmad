@@ -1,0 +1,14 @@
+// Make emoji images bahave with font-size.
+// NO TOUCH
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+#howareyoufeelingbar {
+  .emoji-options {
+    font-size: 42px;
+  }
+}

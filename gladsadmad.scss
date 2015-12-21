@@ -1,0 +1,26 @@
+@import "css/variables.import.scss";
+@import "css/emoji.import.scss";
+@import "{poetic:materialize-scss}/sass/materialize.scss";
+
+h1 {
+  font-weight:600;
+}
+
+.parallax-container {
+  height: auto;
+}
+
+#welcome-parallax-container {
+  height: 300px;
+}
+
+#body-parallax-container {
+  height: 150px;
+}
+
+.nonparallax-container {
+  .card-pane {
+    margin:0;
+    overflow: hidden;
+  }
+}

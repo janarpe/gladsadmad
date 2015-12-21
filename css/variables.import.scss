@@ -1,0 +1,20 @@
+// If you want to override materialize sass variables you can uncomment the following:
+@import "{poetic:materialize-scss}/sass/components/_color.scss";
+
+// List of available colors and versions:
+// https://github.com/poetic/meteor-materialize-scss/blob/mms/0.97.3/sass/components/_color.scss#L10
+
+$primary-color: color("pink", "base");
+$primary-color-light: false;
+$primary-color-dark: false;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("teal", "lighten-1");
+$success-color: color("green", "base");
+$error-color: color("red", "base");
+
+$link-color: color("light-blue", "darken-1");
