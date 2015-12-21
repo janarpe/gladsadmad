@@ -9,21 +9,21 @@
 <template name="main-layout">
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">glad·sad·mad</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
       <ul class="right">
         <li>{{> loginButtons}}</li>
-        <li class="hide-on-med-and-down"><a href="badges.html">Components</a></li>
-        <li class="hide-on-med-and-down"><a href="collapsible.html">Javascript</a></li>
-        <li class="hide-on-med-and-down"><a href="mobile.html">Mobile</a></li>
+        <li class="hide-on-med-and-down"><a href="index.html">Dashboard</a></li>
+        <li class="hide-on-med-and-down"><a href="collapsible.html">Check In</a></li>
+        <li class="hide-on-med-and-down"><a href="mobile.html">Log Out</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <!-- <li>{{> loginButtons}}</li> -->
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="collapsible.html">Check In</a></li>
+        <li><a href="mobile.html">Log Out</a></li>
       </ul>
     </div>
   </nav>
@@ -31,56 +31,24 @@
 </template>
 
 <template name="home">
-  <div id="welcome-parallax-container" class="parallax-container">
+  <div class="parallax-container">
     <div class="parallax">
       <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
     </div>
 
     <h1 class="center-align">
-      WELCOME<br>to<br>glad·sad·mad<br>
-      <img src="http://images.forbes.com/media/lists/companies/saint-gobain_50x50.jpg">
+      WELCOME
     </h1>
   </div>
 
-  <div class="container">
-    <h3>choose a site</h3>
-    <div class="row">
-      <div class="col s3 center-align"><h2>{{> emoji ":us:"}}</h2></div>
-      <div class="col s3 center-align"><h2>{{> emoji ":uk:"}}</h2></div>
-      <div class="col s3 center-align"><h2>{{> emoji ":de:"}}</h2></div>
-      <div class="col s3 center-align"><h2>{{> emoji ":jp:"}}</h2></div>
-    </div>
-  </div>
-
-  <div id="body-parallax-container" class="parallax-container">
-    <div class="parallax">
-      <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
-    </div>
-  </div>
-
-  <div class="container">
-    <h3>news</h3>
-  </div>
-</template>
-
-<template name="dashboard">
-
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
-    </div>
-    <div class="container">
-      <h5>Welcome, ____.</h5>
-    </div>
-  </div>
-
   <div class="nonparallax-container">
-    <div id="howareyoufeelingbar" class="card-panel pink">
-      <h4 class="white-text">How are you feeling today?</h4>
+    <div class="card-panel white">
+      <h3>Choose a site</h3>
       <div class="row">
-        <div class="col s4 center-align"><h1>{{> emoji ":grinning:"}}</h1></div>
-        <div class="col s4 center-align"><h1>{{> emoji ":cry:"}}</h1></div>
-        <div class="col s4 center-align"><h1>{{> emoji ":angry:"}}</h1></div>
+        <div class="col s3 center-align"><h2>{{> emoji ":us:"}}</h2><h5>Wayne</h5></div>
+        <div class="col s3 center-align"><h2>{{> emoji ":uk:"}}</h2><h5>Bristol</h5></div>
+        <div class="col s3 center-align"><h2>{{> emoji ":de:"}}</h2><h5>Willich</h5></div>
+        <div class="col s3 center-align"><h2>{{> emoji ":jp:"}}</h2><h5>Suwa</h5></div>
       </div>
     </div>
   </div>
@@ -91,9 +59,56 @@
     </div>
   </div>
 
+  <div class="nonparallax-container">
+    <div class="card-panel pink">
+      <h3>newsfeed</h3>
+    </div>
+  </div>
+</template>
+
+<template name="dashboard">
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
+    </div>
+    <div class="container">
+      <h4>Welcome, (insert name here).</h4>
+    </div>
+  </div>
+
+  <div class="nonparallax-container">
+    <div id="howareyoufeelingbar" class="card-panel pink">
+      <h4 class="white-text">How are you feeling today?</h4>
+      <div class="row">
+        <div class="col s4 center-align white-text"><h1>{{> emoji ":grinning:"}}</h1><h5>glad</h5></div>
+        <div class="col s4 center-align white-text"><h1>{{> emoji ":cry:"}}</h1><h5>sad</h5></div>
+        <div class="col s4 center-align white-text"><h1>{{> emoji ":angry:"}}</h1><h5>mad</h5></div>
+      </div>
+    </div>
+  </div>
+
   <div id="body-parallax-container" class="parallax-container">
     <div class="parallax">
       <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
+    </div>
+  </div>
+
+  <div class="nonparallax-container">
+    <div class="card-panel deep-orange">
+      <h4 class="white-text">Your Colleagues are Feeling</h4>
+    </div>
+  </div>
+
+  <div id="body-parallax-container" class="parallax-container">
+    <div class="parallax">
+      <img src="http://data2.whicdn.com/images/101780586/superthumb.jpg">
+    </div>
+  </div>
+
+  <div class="nonparallax-container">
+    <div class="card-panel amber darken-4">
+      <h4 class="white-text">Newsfeed</h4>
     </div>
   </div>
 

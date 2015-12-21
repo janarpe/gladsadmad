@@ -8,6 +8,9 @@ h1 {
 
 .parallax-container {
   height: auto;
+  h1,h2,h3,h4,h5,h6{
+    text-shadow: 0 1px 0 white;
+  }
 }
 
 #welcome-parallax-container {
@@ -15,11 +18,11 @@ h1 {
 }
 
 #body-parallax-container {
-  height: 150px;
+  height: 100px;
 }
 
 .nonparallax-container {
-  .card-pane {
+  .card-panel {
     margin:0;
     overflow: hidden;
   }
